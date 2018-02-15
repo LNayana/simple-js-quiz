@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple JavaScript Quiz Demo</title>
+	<link rel="stylesheet" href="contents/css/bootstrap.min.css">
+	<script src="contents/js/bootstrap.min.js"></script>
+	<script src="contents/js/custom.js"></script>
+</head>
+<body>
+	<div id="container" class="container text-center">
+		<header>
+			<h3>JavaScript Quiz Demo</h3>
+			<p>Test your knowledge in <strong>JavaScript Fundamentals</strong></p>
+		</header>
+		<section class="text-left">
+		<div id="lblResults" class="text-center"></div>
+			<form name="quizForm" onsubmit="return submitAnswers();">
+				<h4>Q1. Which of the following is true?</h4>
+<input type="radio" name="q1" value="a" id="q1a"> a) If onKeyDown returns false, the key-press event is cancelled.<br/>
+<input type="radio" name="q1" value="b" id="q1b"> b) If onKeyPress returns false, the key-down event is cancelled.<br/>
+<input type="radio" name="q1" value="c" id="q1c"> c) If onKeyDown returns false, the key-up event is cancelled.<br/>
+<input type="radio" name="q1" value="d" id="q1d"> d) If onKeyPress returns false, the key-up event is canceled.
+		
+		
+		<h4>Q2. Is it possible to nest functions in JavaScript?</h4>
+<input type="radio" name="q2" value="a" id="q2a"> a) True<br/>
+<input type="radio" name="q2" value="b" id="q2b"> b) False
+		
+		
+		<h4>Q3. Who invented the javascript programming language?</h4>
+		<input type="radio" name="q3" value="a" id="q3a"> a) Tennis Ritchie<br/>
+<input type="radio" name="q3" value="b" id="q3b"> b) James Gosling<br/>
+		<input type="radio" name="q3" value="c" id="q3c"> c) Brendan Eich
+		
+		
+		<h4>Q4.  --------------- method returns the number of milliseconds in a date string.</h4>
+		<input type="radio" name="q4" value="a" id="q4a"> a) setHours()<br/>
+<input type="radio" name="q4" value="b" id="q4b"> b) setMinutes()<br/>
+		<input type="radio" name="q4" value="c" id="q4c"> c) parse()
+		
+		
+		<h4>Q5. ------------- converts a string to floating point numbers.</h4>
+		<input type="radio" name="q5" value="a" id="q5a"> a) eval<br/>
+<input type="radio" name="q5" value="b" id="q5b"> b) ParseInt<br/>
+		<input type="radio" name="q5" value="c" id="q5c"> c) ParseFloat
+		<br/><br/><br/>
+		<input type="submit" name="checkAnswers" value="Check Answers" class="btn btn-primary">
+			</form>
+		</section>
+	</div>
+</body>
+</html>
